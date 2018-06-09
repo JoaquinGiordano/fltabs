@@ -4,14 +4,14 @@
 ## Instalación
    1. Descarga los archivos css y js de fltabs
    2. Insertalos en el directorio de tu proyecto
-   3. Escribe ```<link rel="stylesheet" href="fltabs.css">``` en el ```<head>``` de tu HTML para importar el css en el html (este punto es opcional ya que puedes crear tu propia hoja de estilos en CSS si deseas)
-   4. Escribe ```<script src="fltabs.js"></script>``` en el final del ```<body>``` de tu HTML para importar la libreria de JS
-   5. Crea un archivo JS el cual importaras despues del fltabs.js el cual al inicio del mismo contendra esto ```const xtabs = new Xtabs();``` para importar la libreria en JS
+   3. Escribe `<link rel="stylesheet" href="fltabs.css">` en el `<head>` de tu HTML para importar el css en el html (este punto es opcional ya que puedes crear tu propia hoja de estilos en CSS si deseas)
+   4. Escribe `<script src="fltabs.js"></script>` en el final del `<body>` de tu HTML para importar la libreria de JS
+   5. Crea un archivo JS el cual importaras despues del fltabs.js el cual al inicio del mismo contendra esto ` const xtabs = new Xtabs();` para importar la libreria en JS
 
 ## Utlización
 
    ### xtabs.start()
-   Este metodo se utiliza con el fin de crear un elemento donde se vayan a almacenar las pestañas para eso en tu archivo HTML creas un elemento ```<div id="x">``` con una id de tu preferencia, posterior mente en el archivo JS que creamos insertaremos el siguiente codigo: 
+   Este metodo se utiliza con el fin de crear un elemento donde se vayan a almacenar las pestañas para eso en tu archivo HTML creas un elemento `<div id="x">` con una id de tu preferencia, posterior mente en el archivo JS que creamos insertaremos el siguiente codigo: 
 
    ```javascript
       xtabs.start({
