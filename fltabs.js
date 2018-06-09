@@ -1,7 +1,7 @@
 let tabs = 0;
 let sptabs = 0;
 let current_tab_id = null;
-class Xtabs{
+class FLtabs{
 
     constructor(){
        
@@ -16,9 +16,9 @@ class Xtabs{
     addTab(data = {closeButton: true}){
 
         if(data.closeButton != false){
-            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="Xtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p><p class="tab_close_button" onclick="Xtabs.removeTab(${tabs})">x</p></li>`
+            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="FLtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p><p class="tab_close_button" onclick="FLtabs.removeTab(${tabs})">x</p></li>`
         }else{
-            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="Xtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p></li>`
+            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="FLtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p></li>`
         }
         document.querySelector(data.container).innerHTML += `<div class="tab_container">${data.content}</div>`
         tabs++;
@@ -36,7 +36,7 @@ class Xtabs{
     changeActualTab(id){
 
         if(id <= tabs - 1){
-            Xtabs.hideTabs();
+            FLtabs.hideTabs();
             document.getElementsByClassName('tab_container')[id].style.display = "block";
             current_tab_id = id;
         }else{
