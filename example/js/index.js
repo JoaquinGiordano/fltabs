@@ -1,25 +1,25 @@
 
-const xtabs = new Xtabs();
+const fltabs = new FLtabs();
 
-xtabs.start({
+fltabs.start({
     container: '#container'
 })
 
-xtabs.addTab({
+fltabs.addTab({
     title:'Tab 0',
     container: '#container',
     content: `<h1>Tab 0</h1>`,
     closeButton: false
 })
 
-xtabs.addTab({
+fltabs.addTab({
     title:'Tab 1',
     container: '#container',
     content: `<h1>Tab 1</h1>`,
     closeButton: true
 })
 
-xtabs.addTab({
+fltabs.addTab({
     title:'Tab 2',
     container: '#container',
     content: `<h1>Tab 2</h1>`,
