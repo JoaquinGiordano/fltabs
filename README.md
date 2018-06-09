@@ -13,32 +13,32 @@
    ### xtabs.start()
    Este metodo se utiliza con el fin de crear un elemento donde se vayan a almacenar las pestañas para eso en tu archivo HTML creas un elemento ```<div id="x">``` con una id de tu preferencia, posterior mente en el archivo JS que creamos insertaremos el siguiente codigo: 
 
-        ```
-        xtabs.start({
-        container: '#x' //x es la id del elemento contenedor
-        })
-        ```
+   ```javascript
+      xtabs.start({
+      container: '#x' //x es la id del elemento contenedor
+      })
+   ```
         
    Esto nos permitira inicializar el sistema de Pestañas
 
    ### xtabs.addTab()
    Este metodo sirve para poder crear una pestaña, al mismo debemos ingresarle algunos parametros para que pueda funcionar, los parametros debemos ingresarlos de la siguiente manera:
 
-        ```
+   ```javascript
         xtabs.addTab({
         title:'title',                  //titulo de la pestaña
         container: '#x',                //x es la id del elemento contenedor
         content: `<h1>Tab 0</h1>`,      //ingresa lo que desees que contenga la pestaña
         closeButton: true               //por defecto en verdadero
         });
-        ```
+   ```
 
    ### Xtabs.removeTab()
    Este es un metodo estatico es decir que puedes acceder a el sin inicializar la clase, este sirve para borrar una pestaña. Para que el mismo pueda funcionar debemos ingresarle un parametro de la siguiente manera:
 
-        ```
+   ```javascript
         Xtabs.removeTab(id);
-        ```
+   ```
    > Con "id" nos referimos al ID de la pestaña a borrar
 
    > Importante: Al ejecutar este metodo debes debes asegurarte de escribir la X de Xtabs en mayusculas ya que es un metodo estatico
@@ -46,9 +46,9 @@
    ### xtabs.changeActualTab()
    Este metodo se utiliza para cambiar la pestaña activa en el momento. Para que el mismo pueda funcionar debemos ingresarle un parametro de la siguiente manera:
         
-        ```
+   ```javascript
         xtabs.chageActualTab(id);
-        ```
+   ```
    > Con "id" nos referimos al ID de la pestaña a borrar
 
    ### xtabs.getTabsCount()
