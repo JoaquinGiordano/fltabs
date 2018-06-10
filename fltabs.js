@@ -16,16 +16,17 @@ class FLtabs{
     addTab(data = {closeButton: true}){
 
         if(data.closeButton != false){
-            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="FLtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p><p class="tab_close_button" onclick="FLtabs.removeTab(${tabs})">x</p></li>`
+            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" onclick="FLtabs.hideTabs(); this.classList.add('active'); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};" ><p >${data.title} </p><p class="tab_close_button" onclick="FLtabs.removeTab(${tabs})">x</p></li>`
         }else{
-            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" ><p onclick="FLtabs.hideTabs(); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};">${data.title} </p></li>`
+            document.querySelector('#tabs_top').innerHTML += `<li class="tab_label" onclick="FLtabs.hideTabs(); this.classList.add('active'); document.getElementsByClassName('tab_container')[${tabs}].style.display = 'block'; current_tab_id = ${tabs};" ><p >${data.title} </p></li>`
         }
         document.querySelector(data.container).innerHTML += `<div class="tab_container">${data.content}</div>`
         tabs++;
         sptabs++;
     }
 
-    static removeTab(id){
+    
+    removeTab(id){
         console.log(id);
         document.getElementsByClassName('tab_label')[id].style.display = "none";
         document.getElementsByClassName('tab_container')[id].style.display = "none";
@@ -57,8 +58,18 @@ class FLtabs{
         let tabs_count = tabs - 1;
         for(var i = 0; i <= tabs_count; i++){
             document.getElementsByClassName('tab_container')[i].style.display = 'none';
+            document.getElementsByClassName('tab_label')[i].classList.remove('active');
         }
     }
+
+       static removeTab(id){
+        console.log(id);
+        document.getElementsByClassName('tab_label')[id].style.display = "none";
+        document.getElementsByClassName('tab_container')[id].style.display = "none";
+        document.getElementsByClassName('tab_container')[id].innerHTML = "";
+        sptabs--;
+    }
+
 
 }
 

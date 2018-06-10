@@ -26,7 +26,7 @@
    Esto nos permitira inicializar el sistema de Pestañas
 
    ### fltabs.addTab()
-   Este metodo sirve para poder crear una pestaña, al mismo debemos ingresarle algunos parametros para que pueda funcionar, los parametros debemos ingresarlos de la siguiente manera:
+    Este metodo se utiliza para poder crear una pestaña, al mismo debemos ingresarle algunos parametros para que pueda funcionar, los parametros debemos ingresarlos de la siguiente manera:
 
    ```javascript
         fltabs.addTab({
@@ -37,15 +37,15 @@
         });
    ```
 
-   ### FLtabs.removeTab()
-   Este es un metodo estatico es decir que puedes acceder a el sin inicializar la clase, este sirve para borrar una pestaña. Para que el mismo pueda funcionar debemos ingresarle un parametro de la siguiente manera:
+   ### fltabs.removeTab()
+   Este metodo se utiliza para borrar una pestaña. Para que el mismo pueda funcionar debemos ingresarle un parametro de la siguiente manera:
 
    ```javascript
-        FLtabs.removeTab(id);
+        fltabs.removeTab(id);
    ```
    > Con "id" nos referimos al ID de la pestaña a borrar
 
-   > Importante: Al ejecutar este metodo debes debes asegurarte de escribir el "FL" de "FLtabs" en mayusculas ya que es un metodo estatico
+   > Nota: Este metodo tambien se encuentra en forma estatica pero no es recomendable utilizarlo de esa forma
 
    ### xtabs.changeActualTab()
    Este metodo se utiliza para cambiar la pestaña activa en el momento. Para que el mismo pueda funcionar debemos ingresarle un parametro de la siguiente manera:
