@@ -2,7 +2,7 @@
 #tabs_top{
     width: 100%;
     height: 35px;
-    background-color: #dddddd;
+    background-color: #f0c507;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -32,9 +32,9 @@
     background: #555; 
 }
 
-#tabs_top li {
+.tab_label {
     font-family: Arial;
-    background-color: #e6e6e6;
+    background-color: #fdcf00;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 8px;
@@ -50,6 +50,10 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+.tab_label.active{
+    background-color: #ffd724;
 }
 
 #tabs_top p {
@@ -68,6 +72,8 @@
 
 .tab_container{
     display: none;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 webview{
