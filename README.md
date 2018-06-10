@@ -26,7 +26,7 @@
    Esto nos permitira inicializar el sistema de Pestañas
 
    ### fltabs.addTab()
-    Este metodo se utiliza para poder crear una pestaña, al mismo debemos ingresarle algunos parametros para que pueda funcionar, los parametros debemos ingresarlos de la siguiente manera:
+   Este metodo se utiliza para poder crear una pestaña, al mismo debemos ingresarle algunos parametros para que pueda funcionar, los parametros debemos ingresarlos de la siguiente manera:
 
    ```javascript
         fltabs.addTab({
