@@ -1,6 +1,9 @@
 # fltabs
 > Libreria de JavaScript para generar un sistema de pestañas en HTML
 
+<img src="https://joaquingiordano.github.io/fltabs/src/screenshot.png"></img>
+
+
 ## Instalación
    1. Descarga los archivos css y js de fltabs
    2. Insertalos en el directorio de tu proyecto
