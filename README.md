@@ -17,7 +17,7 @@
    Este metodo se utiliza con el fin de crear un elemento donde se vayan a almacenar las pestañas para eso en tu archivo HTML creas un elemento `<div id="x">` con una id de tu preferencia, posterior mente en el archivo JS que creamos insertaremos el siguiente codigo: 
 
    ```javascript
-      const fltabs = new Xtabs();
+      const fltabs = new FLtabs();
       fltabs.start({
       container: '#x' //x es la id del elemento contenedor
       })
